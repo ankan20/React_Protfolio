@@ -11,30 +11,35 @@ const Portfolio = () => {
       src: weatherapp,
       demoLink: 'https://ankan20.github.io/Weather-App/', 
       codeLink: 'https://github.com/ankan20/Weather-App', 
+      name : "Weather App",
     },
     {
       id: 2,
       src: amazon,
       demoLink: ' https://ankan20.github.io/Amazon-Clone/', 
       codeLink: 'https://github.com/ankan20/Amazon-Clone', 
+      name : "Amazon Landing Page",
     },
     {
       id: 3,
       src: todo,
       demoLink: ' https://ankan20.github.io/TODO-List-APP/', 
       codeLink: 'https://github.com/ankan20/TODO-List-APP', 
+      name : "To-Do List App"
     },
     {
       id: 4,
       src: qr,
       demoLink: ' https://ankan20.github.io/QR-Code-Generator/', 
       codeLink: 'https://github.com/ankan20/QR-Code-Generator', 
+      name : "QR Generator",
     },
     {
       id: 5,
       src: bgame,
       demoLink: 'https://ankan20.github.io/Bubble-Game/', 
-      codeLink: 'https://github.com/ankan20/Bubble-Game', 
+      codeLink: 'https://github.com/ankan20/Bubble-Game',
+      name : "Bubble Game", 
     },
     
   ];
@@ -53,19 +58,20 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, demoLink, codeLink }) => (
+          {portfolios.map(({ id, src, demoLink, codeLink,name }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
+              <p className="text-center mt-1 text-blue-300">{name}</p>
               <div className="flex items-center justify-center">
                 <a
                   href={demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  className="w-1/2 px-6 py-3 m-2 duration-200 hover:scale-105"
                 >
                   Demo
                 </a>
@@ -73,7 +79,7 @@ const Portfolio = () => {
                   href={codeLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  className="w-1/2 px-6 py-3 m-2 duration-200 hover:scale-105"
                 >
                   Code
                 </a>
