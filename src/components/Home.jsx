@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import HeroImage from "../assets/heroImage (1).jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
+
+
 const Home = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Function to check if the screen width is below a certain breakpoint
+  const checkIsMobile = () => {
+    setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+  };
+
+  useEffect(() => {
+    // Add an event listener to check screen width when the component mounts
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+
+    
+    return () => {
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  }, []);
+
+  const resumeLink = "/Ankan Das Resume.pdf"; 
+
   return (
     <div
       name="home"
@@ -15,12 +37,12 @@ const Home = () => {
             I'm a Full Stack Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            I have 1 years of experience building and desgining software.
-            Currently, I love to work on web application using technologies like
+            I have 1 year of experience building and designing software.
+            Currently, I love to work on web applications using technologies like
             React and Tailwind.
           </p>
 
-          <div>
+          <div className="flex gap-10">
             <Link
               to="portfolio"
               smooth
@@ -32,7 +54,20 @@ const Home = () => {
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
             </Link>
+
+            {isMobile && (
+            
+            <a
+              href={resumeLink}
+              download
+              className="text-white mt-4  p-2 bg-gradient-to-r from-green-500 to-blue-500 rounded-md text-center block w-fit"
+            >
+              Download Resume
+            </a>
+          )}
           </div>
+
+          
         </div>
 
         <div>
