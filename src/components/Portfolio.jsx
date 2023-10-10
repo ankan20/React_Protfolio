@@ -4,6 +4,7 @@ import amazon from "../assets/portfolio/amazonclone.png";
 import todo from "../assets/portfolio/todo.png";
 import qr from "../assets/portfolio/qr.png";
 import bgame from "../assets/portfolio/bgame.png";
+import game_folio from "../assets/portfolio/game_folio.png";
 const Portfolio = () => {
   const portfolios = [
     {
@@ -41,6 +42,13 @@ const Portfolio = () => {
       codeLink: 'https://github.com/ankan20/Bubble-Game',
       name : "Bubble Game", 
     },
+    {
+      id: 6,
+      src: game_folio,
+      demoLink: 'https://ankan-game-folio.netlify.app/', 
+      codeLink: 'https://github.com/ankan20/Game_Folio',
+      name : "GameFolio", 
+    },
     
   ];
 
@@ -58,7 +66,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, demoLink, codeLink,name }) => (
+          {portfolios.map(({ id, src, demoLink, codeLink, name }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
