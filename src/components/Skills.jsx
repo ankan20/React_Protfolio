@@ -6,7 +6,8 @@ import reactImage from "../assets/react.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import cpp from "../assets/c++.png";
-import python from "../assets/python.png"
+import python from "../assets/python.png";
+import node from "../assets/node.png"
 import c from "../assets/c.png"
 const Skills = () => {
   const techs = [
@@ -40,28 +41,34 @@ const Skills = () => {
       title: "Tailwind",
       style: "shadow-sky-400",
     },
+     {
+      id: 6,
+      src: node,
+      title: "NodeJs",
+      style: "shadow-sky-400",
+    },
     
     
     {
-      id: 6,
+      id: 7,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
     },
     {
-      id: 7,
+      id: 8,
       src: c,
       title: "C",
       style: "shadow-sky-400",
     },
     {
-      id: 8,
+      id: 9,
       src: cpp,
       title: "C++",
       style: "shadow-sky-400",
     },
     {
-      id: 9,
+      id: 10,
       src: python,
       title: "Python",
       style: "shadow-yellow-400",
