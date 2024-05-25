@@ -8,7 +8,8 @@ import tailwind from "../assets/tailwind.png";
 import cpp from "../assets/c++.png";
 import python from "../assets/python.png";
 import node from "../assets/node.png"
-import c from "../assets/c.png"
+import c from "../assets/c.png";
+import mongodb from "../assets/mongodb.png"
 const Skills = () => {
   const techs = [
     {
@@ -47,28 +48,33 @@ const Skills = () => {
       title: "NodeJs",
       style: "shadow-sky-400",
     },
-    
+     {
+      id: 7,
+      src: mongodb,
+      title: "MongoDB",
+      style: "shadow-sky-400",
+    },
     
     {
-      id: 7,
+      id: 8,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
     },
     {
-      id: 8,
+      id: 9,
       src: c,
       title: "C",
       style: "shadow-sky-400",
     },
     {
-      id: 9,
+      id: 10,
       src: cpp,
       title: "C++",
       style: "shadow-sky-400",
     },
     {
-      id: 10,
+      id: 11,
       src: python,
       title: "Python",
       style: "shadow-yellow-400",
