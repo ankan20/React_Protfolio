@@ -12,7 +12,7 @@ const Portfolio = () => {
       id: 0,
       src: wanderluxe,
       demoLink: 'https://wanderluxe-full-stack-project.onrender.com/listings', 
-      codeLink: 'https://github.com/ankan20/Weather-App', 
+      codeLink: 'https://github.com/ankan20/WanderLuxe_Full_stack_project', 
       name : "WanderLuxe",
     },
     {
