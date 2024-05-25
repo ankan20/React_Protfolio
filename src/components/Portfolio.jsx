@@ -5,8 +5,16 @@ import todo from "../assets/portfolio/todo.png";
 import qr from "../assets/portfolio/qr.png";
 import bgame from "../assets/portfolio/bgame.png";
 import game_folio from "../assets/portfolio/game_folio.png";
+import wanderluxe from "../assets/portfolio/wanderluxe.png";
 const Portfolio = () => {
   const portfolios = [
+    {
+      id: 0,
+      src: wanderluxe,
+      demoLink: 'https://wanderluxe-full-stack-project.onrender.com/listings', 
+      codeLink: 'https://github.com/ankan20/Weather-App', 
+      name : "WanderLuxe",
+    },
     {
       id: 1,
       src: weatherapp,
